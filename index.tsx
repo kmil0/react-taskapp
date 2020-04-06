@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { render } from 'react-dom';
 import Hello from './Hello';
 import './style.css';
+import 'bootswatch/dist/cyborg/bootstrap.min.css';
 
 interface AppProps { }
 interface AppState {
@@ -19,10 +20,7 @@ class App extends Component<AppProps, AppState> {
   render() {
     return (
       <div>
-        <Hello name={this.state.name} />
-        <p>
-          Start editing to see some magic happen :)
-        </p>
+        <Hello name={this.state.name} />       
       </div>
     );
   }
